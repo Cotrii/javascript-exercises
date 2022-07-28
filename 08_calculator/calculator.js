@@ -27,9 +27,11 @@ const sum = function(arr) {
 
 const multiply = function(arr) {
 
-  return val = arr.reduce((total, val) => {
-    return total * val;
-  }, 1);
+    // return arr.reduce((total, val) => {
+  //   return total * val;
+  // }, 1);
+
+  return arr.length ? arr.reduce((accumulator, nextItem) => accumulator * nextItem) : 0;
 };
 
 const power = function(a, b) {
